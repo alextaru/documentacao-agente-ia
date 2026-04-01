@@ -1,0 +1,6 @@
+status_flow:
+  - backlog
+  - ready
+  - in_progress
+  - done
+features:

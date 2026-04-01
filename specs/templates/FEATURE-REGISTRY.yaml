@@ -1,0 +1,11 @@
+status_flow:
+  - backlog
+  - ready
+  - in_progress
+  - done
+features:
+  - id: [id da feature]
+    title: [titulo da feature]
+    file: [caminho do arquivo da feature]
+    status: [status_flow da feature]
+    depends_on: [<id das features das quais esta depende>]
