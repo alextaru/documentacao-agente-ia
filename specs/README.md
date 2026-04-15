@@ -32,7 +32,7 @@ Regra geral para horientações de como criar e executar features.
 
 ## Regras
 
-### Fazer ou executar uma feature
+### Fazer ou ajustar uma feature
 
 #### Leitura obrigatoria
 
@@ -45,14 +45,15 @@ Regra geral para horientações de como criar e executar features.
 
 - executar sempre por ordem crescente de ID.
 - Executar apenas features com dependencias resolvidas.
-- Executar apenas uma feature com status `ready`.
+- Executar apenas uma feature com status `ready` ou `in_progress`.
 - Executar apenas dependencias com status `ready` ou `in_progress`.
 - Caso haja dependencias com status `in_progress`, executar essas primeiro.
 - Status `in_progress` deve ler o Plano de execucao e fazer apenas os Ajustes que nao estejam ✅, apos terminar os ajustes deve marcar como ✅.
-- Deve fazer apenas uma feature por vez, as dependencias contam.
-- features com status `backlog` nao devem ser executadas, caso tenha dependencias deve ser executadas primeiro, caso contrario deve seguir para a proxima.
-- Na feature adiconar o plano de execucao em Plano de execucao, para futuras consultas, ele deve ser atualizado tanto em ajustes quanto na execucao.
+- Features com status `backlog` nao devem ser executadas, caso tenha dependencias deve ser executadas primeiro, caso contrario deve seguir para a proxima.
+- Na feature adiconar o plano de execucao em Plano de execucao, para futuras consultas.
 - Atualizar para `done` ao finalizar.
+- Em Ajustes não deve adicionar novas tarefas, apenas marcar como ✅ as tarefas que foram realizadas, caso seja feito algum ajuste de ser requistrado no Plano de execucao.
+- Em plano de execucao deve ser detalhodo, registrar o mesmo plano de execucao usando pelo agente antes de executar a tarefa, para ficar como memoria futura.
 
 ### Criar uma feature
 

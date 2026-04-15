@@ -9,9 +9,9 @@ depends_on:
 
 # Escopo
 
-## Requisitos funcionais
-
 ## Requisitos nao funcionais
+
+## Requisitos funcionais
 
 ## Regras de negocio
 

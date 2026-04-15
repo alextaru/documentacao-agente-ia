@@ -1,0 +1,31 @@
+@startuml
+start
+
+:Operador inicia venda;
+:Adicionar itens no carrinho;
+if (Itens validos?) then (sim)
+  :Calcular subtotal e total;
+else (nao)
+  :Exibir erro de item;
+  stop
+endif
+
+:Selecionar forma de pagamento;
+if (Pagamento aprovado?) then (sim)
+  :Persistir venda;
+  :Solicitar emissao fiscal;
+  if (Documento fiscal emitido?) then (sim)
+    :Imprimir cupom na USB;
+    :Atualizar status da venda para concluida;
+    stop
+  else (nao)
+    :Marcar venda para contingencia;
+    :Notificar operador;
+    stop
+  endif
+else (nao)
+  :Cancelar tentativa de pagamento;
+  stop
+endif
+
+@enduml
