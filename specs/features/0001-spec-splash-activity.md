@@ -1,6 +1,8 @@
 ---
 id: 0001
 title: splash-activity
+status: done
+depends_on: [0002]
 ---
 
 # Contexto
@@ -28,3 +30,9 @@ Passar todo o codigo da Splash Activity, incluindo layout e suas dependencias, d
 ## Ajustes
 
 ## Plano de execucao
+
+1. Validar no registro se a feature 0001 podia ser executada com base em dependencias e status.
+2. Mapear dependencias diretas da splash no projeto antigo (activity, layout, imagens e manifest).
+3. Migrar os arquivos da splash para o projeto novo preservando estrutura e comportamento.
+4. Ajustar o manifest para manter o fluxo de abertura pela splash.
+5. Atualizar a documentacao da feature com plano, ajustes e status final.

@@ -1,6 +1,8 @@
 ---
 id: 0002
 title: login-activity
+status: done
+depends_on: []
 ---
 
 # Contexto
@@ -34,4 +36,15 @@ Passar todo o codigo da Login Activity, incluindo layout e suas dependencias, do
 
 ## Ajustes
 
+- ✅ Corrigido o fluxo entre LoginActivity e ConfiguracaoActivity, com migracao da activity de configuracao, seus recursos e ajuste do retorno em onActivityResult com chamada a super.
+- ✅ Migradas as classes e interfaces ja criadas no projeto novo que sao dependencias diretas e indiretas da LoginActivity, incluindo helpers, services, controllers, models, responses, views, manifest e dependencias Gradle correlatas.
+- ✅ Corrigidos os erros de compilacao do Android resource linking com migracao dos drawables `circulo_*` faltantes e adicao dos aliases de cores (`purple_*`, `teal_*`, `black`, `white`) usados pelos temas.
+
 ## Plano de execucao
+
+1. Levantar dependencias diretas da LoginActivity no projeto antigo e validar existencia no projeto novo.
+2. Migrar o arquivo da activity e ajustar somente o pacote para o namespace atual do projeto novo.
+3. Migrar os recursos visuais diretamente utilizados pela tela de login (layout, include de toolbar, menu e drawables).
+4. Migrar recursos de valores usados pela tela de login (cores, dimensoes, strings e paleta material referenciada).
+5. Ajustar build.gradle do app novo com bibliotecas usadas diretamente pela LoginActivity.
+6. Atualizar o status da feature no registro consolidado.

@@ -7,10 +7,10 @@ features:
   - id: 0001
     title: splash-activity
     file: specs/features/0001-spec-splash-activity.md
-    status: backlog
+    status: done
     depends_on: [0002]
   - id: 0002
     title: login-activity
     file: specs/features/0002-spec-login-activity.md
-    status: backlog
+    status: done
     depends_on: []

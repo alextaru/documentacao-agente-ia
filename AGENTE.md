@@ -10,9 +10,9 @@ Orientações para a atuação no projeto, deve ser seguido como prioridade de t
 
 ## Fluxo recomendado
 
-- Quando pedir para fazer uma feature, ler o arquivo README.md em specs para orientações.
-- Quando pedir para fazer ajuste na feature, ler o arquivo README.md em specs para orientações.
-- Quando pedir para criar uma feature, ler o arquivo README.md em specs para orientações.
+- Quando pedir para fazer feature, ler o arquivo README.md em specs para orientações.
+- Quando pedir para fazer ajuste, ler o arquivo README.md em specs para orientações.
+- Quando pedir para criar feature, ler o arquivo README.md em specs para orientações.
 
 ## Leitura obrigatoria inicial
 
