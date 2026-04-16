@@ -5,22 +5,12 @@ status_flow:
   - done
 features:
   - id: 0001
-    title: Cadastro de PDV offline
-    file: specs/features/0001-spec-cadasdro-pdv-offline.md
-    status: done
-    depends_on: []
-  - id: 0002
-    title: Sincronizar PDV Offline
-    file: specs/features/0002-spec-sincronizar-pdv-offline.md
-    status: done
-    depends_on: [0001]
-  - id: 0003
-    title: NF Saída Contingência
-    file: specs/features/0003-spec-nf-saida-contigencia.md
-    status: done
-    depends_on: [0002]
-  - id: 0004
-    title: Sincronizar PDV Offline API
-    file: specs/features/0004-spec-sincronizar-pdv-offline-api.md
+    title: splash-activity
+    file: specs/features/0001-spec-splash-activity.md
     status: backlog
-    depends_on: [0003, 0002]
+    depends_on: [0002]
+  - id: 0002
+    title: login-activity
+    file: specs/features/0002-spec-login-activity.md
+    status: backlog
+    depends_on: []

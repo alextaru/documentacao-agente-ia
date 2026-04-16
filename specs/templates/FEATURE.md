@@ -1,8 +1,6 @@
 ---
 id:
 title:
-status:
-depends_on:
 ---
 
 # Contexto
